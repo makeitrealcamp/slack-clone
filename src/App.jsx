@@ -1,24 +1,20 @@
 import React, { useState } from 'react'
-import './App.css'
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import './App.scss'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.jsx</code> and save to test HMR updates.
-        </p>
-        <p>Prueba</p>
+    <Container fluid>
+      <header className="main">
+
       </header>
-    </div>
+      <Row>
+        <Col xs={4}>Channels</Col>
+        <Col xs={8}>Messages</Col>
+      </Row>
+    </Container>
   )
 }
 
